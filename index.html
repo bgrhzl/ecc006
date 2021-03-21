@@ -1,11 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>	
-<title>My Web project</title>
-<meta charset="utf-8">
-</head>
-<body>
-    <h2>Buğra Hızal</h2><br>
-        <h2>20180851</h2>
-</body>
+	<head>
+		<title>Resume</title>
+		<meta charset="utf-8">
+		<style>
+		body {
+			color: #6d6d6d;
+			font-size: 14px;
+			font-family: 'Times New Roman', Times, serif;
+			line-height: 1.5;
+			font-weight: normal;
+			overflow-x: hidden;
+		}
+
+		.header {
+			padding: 0px 0px ;
+			background: rgb(0, 0, 0);
+			color: #ffffff;
+            background-repeat: no-repeat;
+			background-position: left;
+			margin-left: -10px;
+			margin-right: -10px;
+			margin-top: -8px;
+			
+		}
+		.content {
+			padding: 16px;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%
+		}
+		.sticky + .content {
+			padding-top: 100px;
+		}
+
+		ul{
+			list-style-type: none;
+			
+			padding 0;
+			overflow: hidden;
+			background-color: #333;
+			margin-left: -20px;
+			margin-right: 0px;
+		}
+		
+		li {
+			float: left;
+			}
+		li a{
+			display: block;
+			color: rgb(245, 245, 245);
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: #111;
+			}
+		li {
+			border-right: 1px solid #bbb;
+		}		
+
+		li:last-child {
+			border-right: none;
+		}
+		footer {
+			font-size:70%;
+			text-align: right;
+			clear: right;
+			padding: 20px;
+			background-color: #ffffff;
+			margin-left: -10px;
+			margin-right: -10px;
+			margin-bottom: -10px;
+		}
+		main {
+			display: block;
+			padding: 50px;
+			color: #000000;
+			margin-left: -10px;
+			margin-right: -10px;
+			background-color: #ffffff;
+		} 
+
+		</style>
+	</head>
+	<body>
+		<div class="header" id="myHeader">
+			<img src="03.jpg" style="width: 200px;height: 250px" alt="Buğra Hızal 20180851" ><p>Buğra Hızal 20180851</p>
+            
+            
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">projects</a>
+				</ul>
+			</nav>
+		</div>
+		<main>
+        <h2><I>Contact</I></h2>
+		<b>Phone</b> +90 (541) 538 08 00<br>
+		<b>E-mail</b> 20180851@std.neu.edu.tr
+		
+		<h2><I>Education</I></h2>
+		<b>2018 - present</b> Near East University<br>	
+		<b>2016 - 2018</b> Hasan Çetin High School<br>
+        <b>2014 - 2016</b> Hisar Anatolian High School
+		<h2><I>Software</I></h2>
+			- Python programming language<br>
+			- HTML and CSS<br>
+			- Django <br>
+		<h2><I>Hobbies</I></h2>
+            - Play pc game<br>
+            - Travel<br>
+            - play guitar
+		</main>
+		<footer>
+			Buğra Hızal &copy; 2021
+		</footer>
+		<script>
+			window.onscroll = function() {myFunction()};
+			var header = document.getElementById("myHeader");
+			var sticky = header.offsetTop;
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+				}
+				else {
+				header.classList.remove("sticky");
+				}
+			}
+		</script>
+	</body>
 </html>
