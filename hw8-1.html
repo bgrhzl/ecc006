@@ -1,51 +1,64 @@
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Movies</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+ <title>Favorite Movie</title>
+ <meta charset="utf-8">
+ 
+ <style>
+  .mytable{
+    border:5px groove;
+    background:#eff0f1;
+    color:rgb(5, 0, 0);
+ 
+    width:60%;
+    height:60vh;
+    margin:auto;
+  }
+  .mytable td{
+ border:5px solid rgb(12, 0, 0);
+ padding:20px;
+ margin:20px;
+ font-size:1rem;
+  }
+  .mytable a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+  }
+ </style>
 </head>
 
 <body>
-  <table>
-    <tr>
-      <th>Title</th>
-      <td>Pirates of the Caribbean 1</td>
-    </tr>
-    <tr>
-      <th>Director</th>
-      <td>Gore Verbinski</td>
-    </tr>
-    <tr>
-      <th>Leading Actor</th>
-      <td>Johnny Deep</td>
-    </tr>
-    <tr>
-      <th>Leading Actress</th>
-      <td>Keira Knightley</td>
-    </tr>
-    <tr>
-      <th>Rating</th>
-      <td>PG-13</td>
-    </tr>
-    <tr>
-      <th>Description</th>
-      <td>Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.</td>
-    </tr>
-    <tr>
-      <th>Review</th>
-      <td><a href="https://www.imdb.com/title/tt0325980/">IMDb Review</a> </td>
-    </tr>
-    <tr>
-      <th>Email me</th>
-      <td><a class="btn" href="mailto:bugra.hizal@hotmail.com">CONTACT ME</a></td>
-    </tr>
-
-  </table>
+ <table class="mytable">
+   
+   <tr>
+     <td>Title</td>
+     <td>Pirates of the Caribbean</td>
+   </tr>
+   <tr>
+     <td>Director</td>
+     <td>Gore Verbinski</td>
+   </tr>
+   <tr>
+     <td>Leading Actor</td>
+     <td>Johnny Deep</td>
+   </tr>
+   <tr>
+     <td>Leading Actress</td>
+     <td>Keira Knightley</td>
+   </tr>
+   <tr>
+     <td>Rating</td>
+     <td>PG-13</td>
+   </tr>
+   <tr>
+     <td>Movie Description</td>
+     <td>Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.</td>
+   </tr>
+   <tr>
+     <td>Reviews</td>
+     <td><a href="https://www.imdb.com/title/tt0325980/">IMDB PAGE</a></td>
+   </tr>
+ </table>
 </body>
-
 </html>
