@@ -1,69 +1,88 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
-
-</head> <link rel="stylesheet" href="indexStyle.css" type="text/css" media="screen" charset="utf-8"/>
-
-<title>Buğra Hızal</title>
-<img src="03.jpg" title="Sara and Dog" width="210" height="250" />
-
+  <meta charset="utf-8">
+  <title>Music Survey</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <h1>Music Survey</h1>
+  <form>
+    <label>Name:</label>
+    <br>
+    <input type="text">
+    <br>
+    <label>E-Mail:</label>
+    <br>
+    <input type="email">
 
+    <fieldset>
+      <legend>Select Your Favorite Types of Music:</legend>
+      <input type="checkbox"/>
+      <label>Pop</label>
+      <br>
+      <input type="checkbox"/>
+      <label>Classical</label>
+      <br>
+      <input type="checkbox"/>
+      <label>Rock</label>
+      <br>
+      <input type="checkbox"/>
+      <label>Folk</label>
+      <br>
+      <input type="checkbox"/>
+      <label>Rap</label>
+      <br>
+      <input type="checkbox"/>
+      <label>Other</label>
+      <br>
+    </fieldset>
 
+    <br>
 
-</div>
- 
-<div id = "info" class = "left" >
-	<main>
+    <fieldset>
+      <legend>Select how often you purchase Music CDs:</legend>
+      <input type="radio"/>
+      <label>Weekly</label>
+      <br>
+      <input type="radio"/>
+      <label>A few CDs each year</label>
+      <br>
+      <input type="radio"/>
+      <label>Monthly</label>
+      <br>
+      <input type="radio"/>
+      <label>Never purchase</label>
+      <br>
+    </fieldset>
 
-		<h1>Buğra Hızal</h1>
-		<h2>20180851</h2><br>
-		<br>
-		<h2><I>Contacts</I></h2>
-		<hr>
-		<b>Phone</b> +90(541)538-08-00<br>
-		<b>E-mail</b> 20180851@std.neu.edu.tr<br>
+    <br>
 
-		<h2>Homework</h2>
-		<hr>
-		<div class="">
-			<a class="btn" href="hw5.pdf" target="blank">HW 5</a><br>
-			<a class="btn" href="hw6.pdf" target="blank">HW 6</a><br>
-			<a class="btn" href="hw7.pdf" target="blank">HW 7</a><br>
-			<a class="btn" href="hw8-1.html" target="blank">HW 8/1</a>
+    <label>Select the locations you listen to Music:</label>
+    <br>
+    <select multiple size="3">
+      <option selected>At home</option>
+      <option>In the Car</option>
+      <option>In my room</option>
+	  <option>In the shower</option>
+	  <option>In the gym</option>
+    </select>
 
-		</div>
-		
-		
-		<h2><I>Education</I></h2>
-		<hr>
-		<b>2018 - present</b>	Near East University<br>
-		<b>2016 - 2018</b>	Hasan Çetin High School<br>
-		<b>2014 - 2016</b>	Hisar Anatolian High School<br>
+    <br>
 
-		<h2><I>Software</I></h2>
-		<hr>
-			- dart programming language<br>
-			- C/C++ programming language<br>
-			- Python programming language<br>
-			- HTML and CSS<br>
-			- Django <br>
-			- Flutter 
+    <label>What role does music play in your life?</label>
+    <br>
+    <textarea rows="3" cols="60"></textarea>
+    <br>
 
-		<h2><I>Hobbies</I></h2>
-		<hr>
-			- Reading comics<br>
-			- swimming<br>
-			- american football<br>
-		</main><br>
-		<br>
-	<footer>
+    <button type="submit"><a href="http://www.uyar.com/teaching/ecc006/2017spring/login.php">Submit</a></button>
+    <button type="reset">Reset</button>
 
- 	<i>Buğra Hızal</i> &copy; 
-</footer>
-</div>
+  </form>
+
 </body>
+
 </html>
